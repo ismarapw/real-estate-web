@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homescepe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/reset.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/global.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/main.css') }}" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav id="navbar">
+        <ul>
+            <li>
+                <div id="logo">
+                    <img src="{{ url_for('static', filename = 'images/logo.svg') }}" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="github">
+                    <a href="https://github.com/ismarapw" target="_blank">
+                        <i class="ri-github-fill"></i>
+                        <span>Github</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <section id="jumbotron">
+        <div class="banner">
+            <div class="tagline">
+                <h1 class="main-tagline">Real Estate Made Easy</h1>
+                <h3 class="sub-tagline">Estimate Your Dream House Prices in Benguluru, India</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location-section">
+        <div class="heading-text">
+            <h1>Select Location Here</h1>
+        </div>
+        <div class="all-location">
+            <div class="place">
+                <label class="img-place" for="1st Block Jayanagar">
+                    <img src="{{ url_for('static', filename = 'images/loc1.jpg') }}" alt="">
+                    <div class="select">
+                        <i class="ri-checkbox-circle-line"></i>
+                        <span>Select</span>
+                    </div>
+                </label>
+                <h4 class="place-name">1st Block Jayanagar</h4>
+            </div>
+            <div class="place">
+                <label class="img-place" for = "1st Block Koramangala">
+                    <img src="{{ url_for('static', filename = 'images/loc2.jpg') }}" alt="">
+                    <div class="select">
+                        <i class="ri-checkbox-circle-line"></i>
+                        <span>Select</span>
+                    </div>
+                </label>
+                <h4 class="place-name">1st Block Koramangala</h4>
+            </div>
+            <div class="place">
+                <label class="img-place" for = "1st Phase JP Nagar">
+                    <img src="{{ url_for('static', filename = 'images/loc3.jpg') }}" alt="">
+                    <div class="select">
+                        <i class="ri-checkbox-circle-line"></i>
+                        <span>Select</span>
+                    </div>
+                </label>
+                <h4 class="place-name">1st Phase JP Nagar</h4>
+            </div>
+            <div class="place">
+                <label class="img-place" for = "2nd Phase Judicial Layout">
+                    <img src="{{ url_for('static', filename = 'images/loc4.jpg') }}" alt="">
+                    <div class="select">
+                        <i class="ri-checkbox-circle-line"></i>
+                        <span>Select</span>
+                    </div>
+                </label>
+                <h4 class="place-name">2nd Phase Judicial Layout</h4>
+            </div>
+            <div class="place">
+                <label class="img-place" for = "2nd Stage Nagarbhavi">
+                    <img src="{{ url_for('static', filename = 'images/loc5.jpg') }}" alt="">
+                    <div class="select">
+                        <i class="ri-checkbox-circle-line"></i>
+                        <span>Select</span>
+                    </div>
+                </label>
+                <h4 class="place-name">2nd Stage Nagarbhavi</h4>
+            </div>
+            <div class="place">
+                <label class="img-place" for = "5th Block Hbr Layout">
+                    <img src="{{ url_for('static', filename = 'images/loc6.jpg') }}" alt="">
+                    <div class="select">
+                        <i class="ri-checkbox-circle-line"></i>
+                        <span>Select</span>
+                    </div>
+                </label>
+                <h4 class="place-name">5th Block Hbr Layout</h4>
+            </div>
+            <div class="place">
+                <label class="img-place" for = "Uttarahalli">
+                    <img src="{{ url_for('static', filename = 'images/loc7.jpg') }}" alt="">
+                    <div class="select">
+                        <i class="ri-checkbox-circle-line"></i>
+                        <span>Select</span>
+                    </div>
+                </label>
+                <h4 class="place-name">Uttarahalli</h4>
+            </div>
+            <div class="place">
+                <label class="img-place" for = "Vittasandra">
+                    <img src="{{ url_for('static', filename = 'images/loc8.jpg') }}" alt="">
+                    <div class="select">
+                        <i class="ri-checkbox-circle-line"></i>
+                        <span>Select</span>
+                    </div>
+                </label>
+                <h4 class="place-name">Vittasandra</h4>
+            </div>
+            <div class="place">
+                <label class="img-place" for = "Whitefield">
+                    <img src="{{ url_for('static', filename = 'images/loc9.jpg') }}" alt="">
+                    <div class="select">
+                        <i class="ri-checkbox-circle-line"></i>
+                        <span>Select</span>
+                    </div>
+                </label>
+                <h4 class="place-name">Whitefield</h4>
+            </div>
+            <div class="place">
+                <label class="img-place" for = "Yelahanka New Town">
+                    <img src="{{ url_for('static', filename = 'images/loc10.jpg') }}" alt="">
+                    <div class="select">
+                        <i class="ri-checkbox-circle-line"></i>
+                        <span>Select</span>
+                    </div>
+                </label>
+                <h4 class="place-name">Yelahanka New Town</h4>
+            </div>
+            <div class="place">
+                <label class="img-place" for = "Chikka Tirupathi">
+                    <img src="{{ url_for('static', filename = 'images/loc11.jpg') }}" alt="">
+                    <div class="select">
+                        <i class="ri-checkbox-circle-line"></i>
+                        <span>Select</span>
+                    </div>
+                </label>
+                <h4 class="place-name">Chikka Tirupathi</h4>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form-section">
+        <div class="heading-text">
+            <h1>Predict House Price<span class="loc-predict"></span></h1>
+        </div>
+        <form action="" class="form-wrapper" method="POST">
+            <div>
+                <label for="sqft" class = "form-label">Total Square Feet (m<sup>2</sup>)</label>
+                <input ype="number" id = "sqft" name = "sqft" required min = "1" placeholder = "Input total square feet">
+            </div>
+            <div>
+                <label for="bed" class = "form-label">Total Bedroom</label>
+                <input type="number" id = "bed" name = "bed" required min = "1" placeholder = "Input total bedroom"}>
+            </div>
+            <div>
+                <label for="bath" class = "form-label">Total Bathroom</label>
+                <input type="number" id = "bath" name = "bath" required min = "1" placeholder = "Input total bathroom">
+            </div>
+            <div>
+                <label for="balcony" class = "form-label">Total Balcony</label>
+                <input type="number" id = "balcony" name = "balcony" required min = "0" placeholder = "Input total balcony">
+            </div>
+            <div>
+                <input type="radio" id = "1st Block Jayanagar" name = "loc" value="1st Block Jayanagar">
+                <input type="radio" id = "1st Block Koramangala" name = "loc" value="1st Block Koramangala">
+                <input type="radio" id = "1st Phase JP Nagar" name = "loc" value="1st Phase JP Nagar">
+                <input type="radio" id = "2nd Phase Judicial Layout" name = "loc" value="2nd Phase Judicial Layout">
+                <input type="radio" id = "2nd Stage Nagarbhavi" name = "loc" value="2nd Stage Nagarbhavi">
+                <input type="radio" id = "5th Block Hbr Layout" name = "loc" value="5th Block Hbr Layout">
+                <input type="radio" id = "Uttarahalli" name = "loc" value="Uttarahalli">
+                <input type="radio" id = "Vittasandra" name = "loc" value="Vittasandra">
+                <input type="radio" id = "Whitefield" name = "loc" value="Whitefield">
+                <input type="radio" id = "Yelahanka New Town" name = "loc" value="Yelahanka New Town">
+                <input type="radio" id = "Chikka Tirupathi" name = "loc" value="Chikka Tirupathi">
+            </div>
+            <div>
+                <button type="submit" class="predict">Predict</button>
+                <button type="reset" class="reset">Reset</button>
+            </div>
+            <div>
+                <h4 class="warn">Please Select the Location</h4>
+            </div>
+        </form>
+    </section>
+
+    <!-- Result Section -->
+    <section id="result-section">
+        <h2>Estimated Price: <span class="result">₹ 0</span></h2>
+    </section>
+
+    <!-- Loading -->
+    <div class="loading">
+        <span>Predicting...</span>
+    </div>
+
+    <!-- Script -->
+    <script src={{ url_for('static', filename = 'script/event.js') }}></script>
+
+</body>
+</html>

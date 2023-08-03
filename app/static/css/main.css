@@ -1,0 +1,295 @@
+#navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li:nth-child(1) {
+    flex-grow: 1;
+}
+
+#navbar ul li:nth-child(2), #navbar ul li:nth-child(3) {
+    flex-grow: 0;
+}
+
+
+#logo img {
+    width: 200px; 
+}
+
+.github i {
+    font-size: 28px;
+    color: #5D5D5D;
+}
+
+.github a {
+    text-decoration: none;
+    
+}
+
+.github a:visited {
+    color: black;
+}
+
+.github span {
+    position: relative;
+    bottom: 4px;
+}
+
+.tagline {
+    text-align: center;
+    color: #FFF;
+    position: absolute;
+    z-index: 1;
+}
+
+.main-tagline {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.sub-tagline {
+    margin-top: .5rem;
+    font-size: 16px; 
+}
+
+.banner {
+    background: url('../images/banner.jpg');
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner::after {
+    border-radius: 15px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+}
+
+#location-section {
+    margin-top: 4.5rem;
+}
+
+.heading-text {
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+}
+
+.heading-text::after {
+    position: absolute;
+    bottom: -8px;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #0FA7E9 0%, #0F31E9 100%);
+}
+
+.all-location {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px 25px;
+}
+
+.place {
+    width: fit-content;
+}
+
+.img-place {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.img-place img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: .2s ease-in;
+}
+
+.img-place img.active {
+    filter: brightness(50%);
+    transition: .2s ease-in;
+}
+
+.place-name {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.select {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0;
+    transition: .2s ease-in;
+}
+
+.select.active {
+    transition: .2s ease-in; 
+    opacity: 1;
+}
+
+
+#form-section{
+    margin-top: 4.5rem;
+}
+
+sup {
+    font-size: 10px;
+    vertical-align: super;
+}
+
+.form-wrapper {
+    margin-top: 2.5rem;
+}
+
+form label {
+    display: block;
+    font-weight: 500;
+}
+
+.form-wrapper div:not(:nth-of-type(1)){
+    margin-top: 2rem;
+}
+
+input {
+    margin-top: .5rem;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border-color: rgb(113, 113, 113);
+    border-style:solid;
+    width: 100%;
+    font-size: 16px;
+    border-width: 2.5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1284DB;
+    transition: ease-in .2s;
+}
+
+button {
+    border: none;
+    padding: 11px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #FFF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+button.predict:hover {
+    background: linear-gradient(90deg, #09229d 0%, #0b8eb7 100%);
+}
+
+button.predict {
+    background: linear-gradient(90deg, #1432D1 0%, #11AEE0 100%);
+}
+
+button.reset:hover {
+    transition: .1s ease-in-out;
+    background-color: #505050;
+}
+
+button.reset {
+    margin-left: 1rem;
+    background-color: #727272;
+}
+
+#result-section{
+    margin-top: 2rem;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#result-section span {
+    font-weight: 700;
+    
+}
+
+input[type='radio']{
+    display: none;
+}
+
+.warn {
+    color: red;
+    font-weight: 500;
+    display: none;
+}
+
+.warn.active {
+    display: inline-block;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 60%;
+    color: white;
+}
+
+@media screen and (max-width: 670px){
+    .banner {
+        height: 400px;
+    }
+
+    .place {
+        width: inherit;
+    }
+
+    .img-place {
+        width: 100%
+    } 
+
+    .img-place img {
+        width: 100%;
+        height: 170px;
+    }
+
+    .main-tagline {
+        font-weight: bold;
+        font-size: 28px;
+    }
+    
+    .sub-tagline {
+        margin-top: .8rem;
+        font-size: 16px; 
+    }
+
+    .tagline {
+        padding: 10px;
+    }
+
+    #logo img {
+        width: 160px; 
+    }
+}
