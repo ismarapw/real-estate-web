@@ -1,5 +1,5 @@
 # Real Estate Prediction Website
-Hello there, welcome to my repository! This project is for implementing Machine Learning Model that i've done. The aim of this project is to make a website that can predict user's desired house or real estate in Banglore, India. You can check my repo [here](https://github.com/ismarapw/hindi-house-prediction) to elaborate how i got the model. Basically this website will has several input form related to the house criteria. 
+Hello there, welcome to my repository! This project is for implementing Machine Learning Model that i've done. The aim of this project is to make a website that can predict user's desired house or real estate in Banglore, India. You can check my repo [here](https://github.com/ismarapw/hindi-house-prediction) to elaborate how i got the model. Basically this website has several input form related to the house criteria. 
 
 # Key Points
 1. Implemented flask as an inference process.
